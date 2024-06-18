@@ -1,0 +1,102 @@
+.task-details {
+  height: 70vh;
+  h1 {
+    margin-top: 300%;
+  }
+
+  li {
+    color: red;
+  }
+
+  .badge-pill {
+    border-radius: 10px;
+  }
+  .badge-pill:hover {
+    background-color: #ccc;
+  }
+  .badge-pill:active {
+    background-color: #ccc;
+  }
+  .badge-pill:focus {
+    background-color: #ccc;
+  }
+  .badge {
+    background-color: orangered;
+    cursor: pointer;
+  }
+
+  .title {
+    height: 10%;
+    margin-bottom: 3%;
+  }
+  .user-id {
+    height: 10%;
+    margin-bottom: 3%;
+  }
+  .task-id {
+    height: 10%;
+    margin-bottom: 3%;
+  }
+  .completed {
+    height: 10%;
+    margin-bottom: 3%;
+  }
+  .main-div {
+    margin-top: 5%;
+  }
+
+  @media (max-width: 1024px) {
+    .main-div {
+      margin-top: 10%;
+    }
+    .title {
+      height: 20%;
+      margin-bottom: 5%;
+    }
+    .user-id {
+      height: 20%;
+      margin-bottom: 5%;
+    }
+    .task-id {
+      height: 20%;
+      margin-bottom: 5%;
+    }
+    .completed {
+      height: 20%;
+      margin-bottom: 3%;
+    }
+    .main-div {
+      margin-top: 15%;
+    }
+  }
+}
+
+.editable {
+  margin-top: 5%;
+}
+
+@media (max-width: 768px) {
+  .editable {
+    margin-top: 15%;
+    height: 50vh;
+  }
+  #title {
+        margin-bottom: 5%;
+  }
+
+  #number{
+        margin-bottom: 5%;
+  }
+  #user {
+        margin-bottom: 5%;
+  }
+  #boolean {
+        margin-bottom: 5%;
+  }
+  button {
+        background-color: red;
+  }
+  .left {
+        margin-right: 5%;
+  }
+}

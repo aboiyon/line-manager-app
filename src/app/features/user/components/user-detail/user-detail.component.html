@@ -1,0 +1,47 @@
+<div class="user-detail">
+  <div class="container">
+    <div class="row">
+      <div class="personal-details" *ngIf="userOnDisplay.id">
+        <h4>User</h4>
+        <div>
+          <label><strong>Name:</strong></label> {{ userOnDisplay.name }}
+        </div>
+        <div>
+          <label><strong>username:</strong></label>
+          {{ userOnDisplay.username }}
+        </div>
+        <div>
+          <label><strong>Id:</strong></label>
+          {{ userOnDisplay.id }}
+        </div>
+        <div>
+          <label><strong>Company:</strong></label>
+          {{ userOnDisplay.company }}
+        </div>
+        <div>
+          <label><strong>Website::</strong></label>
+          {{ userOnDisplay.website }}
+        </div>
+        <div>
+          <label><strong>Email:</strong></label>
+          {{ userOnDisplay.email }}
+        </div>
+        <div>
+          <label><strong>Phone:</strong></label>
+          {{ userOnDisplay.phone }}
+        </div>
+        <div>
+          <label><strong>Address:</strong></label>
+          {{ userOnDisplay.address }}
+        </div>
+      </div>
+      <div *ngIf="!userOnDisplay.name">
+        <br />
+        <p>Please click on a task...</p>
+      </div>
+    </div>
+    <button class="badge badge-danger mr-2" (click)="deleteUser()">
+      Delete
+    </button>
+  </div>
+</div>

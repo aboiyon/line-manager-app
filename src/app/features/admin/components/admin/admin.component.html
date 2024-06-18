@@ -1,0 +1,12 @@
+<h2>Admin Panel</h2>
+<ul>
+  <li *ngFor="let user of users">
+    {{ user.username }}
+    <button
+      (click)="assignManager(user.id)"
+      [disabled]="user.roles?.includes('manager')"
+    >
+      Assign Manager Role
+    </button>
+  </li>
+</ul>

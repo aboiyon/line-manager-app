@@ -1,0 +1,19 @@
+<div class="users">
+  <div class="container">
+    <div class="row">
+      <h1>Users</h1>
+      <div class="employees border-bottom" *ngFor="let user of users">
+        <p class="user-detail-route" [routerLink]="['/users', user.id]">
+          Name: {{ user.name }}
+        </p>
+        <p>Username: {{ user.username }}</p>
+        <p>id: {{ user.id }}</p>
+        <p>Phone: {{ user.phone }}</p>
+        <p>Address: {{ user.address }}</p>
+        <p>Email</p>
+        <p>company: {{ user.company }}</p>
+        <p>Website: {{ user.website }}</p>
+      </div>
+    </div>
+  </div>
+</div>

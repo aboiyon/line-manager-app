@@ -1,0 +1,46 @@
+<div class="login-container">
+  <div class="container">
+
+    <div class="row">
+        <h1>Welcome to Nelel</h1>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <div class="avi">
+          <img
+            src="/assets/images/login.jpg"
+            alt="login image"
+            class="img-fluid logo"
+          />
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <div class="login">
+          <h2>Login</h2>
+          <form (ngSubmit)="login()">
+            <div>
+              <label for="username">Username:</label>
+              <input
+                type="text"
+                id="username"
+                [(ngModel)]="username"
+                name="username"
+              />
+            </div>
+            <div>
+              <label for="password">Password:</label>
+              <input
+                type="password"
+                id="password"
+                [(ngModel)]="password"
+                name="password"
+              />
+            </div>
+            <button type="submit">Login</button>
+          </form>
+          <div *ngIf="error" class="error">{{ error }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

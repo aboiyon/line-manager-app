@@ -1,0 +1,9 @@
+<div class="container" >
+  <div class="tasks border-bottom" *ngFor="let todo of todos">
+    <h2 class="route" [routerLink]="['/tasks', todo.id]">Title: {{ todo.title }}</h2>
+    <p>Task number: {{ todo.id }}</p>
+    <p>User Id: {{ todo.userId }}</p>
+    <p>Completed: {{ todo.completed }}</p>
+  </div>
+  <button type="button" routerLink="/add">Add Task</button>
+</div>

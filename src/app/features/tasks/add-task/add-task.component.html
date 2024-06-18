@@ -1,0 +1,54 @@
+<div>
+        <div class="submit-form  pt-5">
+          <div *ngIf="!submitted">
+            <div class="form-group">
+              <label for="title">Title</label>
+              <input
+                type="text"
+                class="form-control"
+                id="title"
+                required
+                [(ngModel)]="todo.title"
+                name="title"
+              />
+            </div>
+            <div class="form-group">
+              <label for="id">Task Id:</label>
+              <input
+                class="form-control"
+                id="id"
+                required
+                [(ngModel)]="todo.id"
+                name="id"
+              />
+            </div>
+            <div class="form-group">
+                <label for="user">User Id:</label>
+                <input
+                  class="form-control"
+                  id="user"
+                  required
+                  [(ngModel)]="todo.userId"
+                  name="user"
+                />
+              </div>
+              <div class="form-group">
+                <label for="status">Completed</label>
+                <input
+                  class="form-control"
+                  id="status"
+                  required
+                  [(ngModel)]="todo.completed"
+                  name="status"
+                />
+              </div>
+              
+            <button (click)="saveTask()" class="btn btn-success">Submit</button>
+          </div>
+          <div *ngIf="submitted">
+            <h4>Recipe was submitted successfully!</h4>
+            <button class="btn btn-success" (click)="newTask()">Add</button>
+          </div>
+        </div>
+      </div>
+    
