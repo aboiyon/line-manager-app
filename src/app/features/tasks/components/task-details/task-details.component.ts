@@ -140,6 +140,7 @@ export class TaskDetailsComponent implements OnInit {
     this.tasksService.delete(this.taskOnDisplay.id).subscribe({
       next: (response) => {
         console.log(response);
+        window.alert('Task deleted successfully')
         this.router.navigate(['/tasks']);
       },
       error: (err) => {
