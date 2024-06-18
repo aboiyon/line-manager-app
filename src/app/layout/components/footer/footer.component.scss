@@ -1,0 +1,68 @@
+.border-white img {
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+}
+.col-12 li {
+  list-style: none;
+}
+.footer {
+  color: white;
+}
+
+.card img {
+  height: 200px;
+}
+
+footer {
+  background: var(--nelel-website-footer-background-color);
+}
+footer .logo {
+  max-width: 100px;
+}
+footer {
+  color: #fff;
+}
+footer .subscription a,
+footer .sitemap a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  font-size: 12px;
+  transition: all 0.2s ease;
+}
+footer .subscription a:hover,
+footer .sitemap a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .h5 {
+    margin-left: 15%;
+  }
+  .contact {
+    margin-left: 0%;
+  }
+}
+
+@media (max-width: 768px) {
+  .h5 {
+    margin-left: 13%;
+  }
+  .contact {
+    margin-left: 0%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .h5 {
+    margin-left: 7%;
+  }
+  .contact {
+    margin-left: 0%;
+  }
+  .navabar-brand {
+    margin-left: 10%;
+  }
+}

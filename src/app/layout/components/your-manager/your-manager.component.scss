@@ -1,0 +1,17 @@
+.your-manager {
+  background-color: var(--nelel-website-color-primary-grey);
+
+  .text {
+    text-align: center;
+    margin-bottom: 3%;
+    margin-top: 5%;
+  }
+  .services {
+    margin-bottom: 5%;
+  } button {
+        margin-bottom: 5%;
+        border-radius: 5px;
+        background-color: var(--nelel-website-color-primary-green);
+        color: white;
+  }
+}

@@ -1,0 +1,39 @@
+.landing-page {
+  height: 80vh;
+  width: 100%;
+  background-image: url(/assets/images/office.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .web-title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-right: -40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    
+  }
+  h1 {
+    font-size: larger;
+    font-weight: 900;
+    font-size: xx-large;
+  }
+
+  .start {
+    margin-right: 3%;
+    background-color: var(--nelel-website-color-primary-green);
+    color: white;
+  }
+  .end {
+        background-color: var(  --nelel-website-color-primary-royal-blue);
+        color: white;
+  }
+  button {
+        border-radius: 5px;
+  }
+}
+
+
