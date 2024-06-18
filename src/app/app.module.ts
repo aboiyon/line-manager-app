@@ -9,7 +9,6 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { UserModule } from './features/user/user.module';
 import { LayoutModule } from './layout/layout.module';
 import { AdminModule } from './features/admin/admin.module';
-import { ApiService } from './data/services/api.service';
 import { TasksModule } from './features/tasks/tasks.module';
 import { FormsModule } from '@angular/forms';
 
@@ -31,7 +30,6 @@ import { FormsModule } from '@angular/forms';
   ],
   providers: [
     provideAnimationsAsync(),
-    ApiService
   ],
   bootstrap: [AppComponent]
 })

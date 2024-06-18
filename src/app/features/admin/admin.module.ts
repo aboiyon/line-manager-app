@@ -11,7 +11,7 @@ const ADMIN_ROUTES: Routes = [
 ];
 
 @NgModule({
-  declarations: [AdminComponent],
+  declarations: [],
   imports: [CommonModule,
         RouterModule.forChild(ADMIN_ROUTES)
   ],
