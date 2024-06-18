@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from '../../../../data/services/data.service';
 import { AuthService } from '../../../auth/services/auth.service';
+import { DataService } from '../../../../data/services/data.service';
 
 @Component({
   selector: 'app-admin',
