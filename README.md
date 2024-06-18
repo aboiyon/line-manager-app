@@ -76,7 +76,7 @@ Here is what you need to be able to run the Nelelco Website.
     ```
 
 ## Login Users
-Username: admin, password: password
+Username: admin, password: admin
 Username: manager, passsword: manager
 Username: user1, password: user1 for employee
 
